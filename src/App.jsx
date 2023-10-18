@@ -1,10 +1,13 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
+import SolarSystem from './components/SolarSystem';
 
 function App() {
   return (
     <>
-      <Canvas></Canvas>
+      <Canvas>
+        <SolarSystem />
+      </Canvas>
     </>
   );
 }
