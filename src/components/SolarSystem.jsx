@@ -1,11 +1,10 @@
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { useTexture } from '@react-three/drei';
+import { OrbitControls, useTexture } from '@react-three/drei';
 import Earth from './Earth';
 
 const SolarSystem = () => {
   const SolarRef = useRef();
-
   const [sunTexture] = useTexture(['/assets/sun.jpeg']);
 
   useFrame((state, delta) => {
@@ -16,6 +15,8 @@ const SolarSystem = () => {
     <>
       <directionalLight position={[1, 1, 8]} />
 
+      <OrbitControls />
+      <ambientLight />
       <mesh ref={SolarRef}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshStandardMaterial map={sunTexture} />
