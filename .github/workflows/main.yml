@@ -1,0 +1,15 @@
+name: 심성보 테스트
+
+# Event: 실행되는 시점을 설정
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  worklfows-branch-test:
+    runs-on: ubuntu-latest
+
+    setps:
+      - name: 'hello world'
+        run: echo  "hello world"
