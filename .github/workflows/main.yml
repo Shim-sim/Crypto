@@ -1,4 +1,4 @@
-name: 심성보 테스트
+name: 심성보 테스트 to Main으로 변경하면 어떻게 되나?
 
 # Event: 실행되는 시점을 설정
 on:
@@ -12,4 +12,4 @@ jobs:
 
     steps:
       - name: 'hello world'
-        run: echo ${{ github.workspace }}/.next/cache
+        run: echo  "hello world"

@@ -1,0 +1,38 @@
+# workflow의 이름
+name: github action 기본 문법
+
+# Event: 실행되는 시점을 설정
+# dev라는 브랜치에 push될 때 아래 workflow를 실행
+on:
+  push:
+    branches:
+      - dev
+# 하나의 workflow는 1개 이상의 job으로 구성된다.
+# 여러 job은 기본적으로 병렬적으로 수행된다.
+jobs:
+  # Job을 식별하기 위한 ID(임의의 값)
+  worklfows-branch-test:
+    # github aciton가 실행 될 가상환경 / 가장 최선 버전(Latest)
+    runs-on: ubuntu-latest
+
+    # step: 특정 작업을 수행하는 가장 작은 단위
+    steps:
+      # run에는 리눅스 명령어를 작성한다.
+      - name: 'hello world'
+        run: echo  "hello world"
+
+      # 여러 명령어는 짝대기가 중요하다.
+      - name: 여러 명령어 문장 작성하기 |
+        run: |
+          echo  "hello world"
+          echo  "hello world"
+
+      - name: Github Actions자체에 저장되어 있는 변수 사용하기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+
+      - name: Github secrets값 사용하기
+        run: |
+          echo ${{ secrets.FIRST_NAME}}
+          echo ${{ secrets.FIRST_NAME}}
