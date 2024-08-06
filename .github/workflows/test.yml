@@ -1,5 +1,5 @@
 # workflow의 이름
-name: 지금 내가 막 이름을 생성했을 때 워크플로우 테스트
+name: 심성보 변경
 
 # Event: 실행되는 시점을 설정
 # dev라는 브랜치에 push될 때 아래 workflow를 실행
