@@ -6,7 +6,7 @@ name: mian이 아닌 브랜치에서 이름을 변경했을 때? workflow의 네
 on:
   push:
     branches:
-      - dev
+      - test-branch
 # 하나의 workflow는 1개 이상의 job으로 구성된다.
 # 여러 job은 기본적으로 병렬적으로 수행된다.
 jobs:
