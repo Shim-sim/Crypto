@@ -7,6 +7,7 @@ function App() {
     <>
       <Canvas>
         <SolarSystem />
+        testests
       </Canvas>
     </>
   );
