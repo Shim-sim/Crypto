@@ -1,0 +1,10 @@
+# name: Dev deploy to EC2
+
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       tags:
+#         description: 'description'
+#         required: true
+#         default: 'Deploy'
+
