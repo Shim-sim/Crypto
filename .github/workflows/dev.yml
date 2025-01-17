@@ -1,5 +1,5 @@
 # workflow의 이름
-name: dev브랜치에서만 workflow 네임을 변경했을 때 액션에 반영되는지 체크
+name: dev브랜치에서 work플로우 내용을 변경했을 때 바로 반영되는가?
 
 # Event: 실행되는 시점을 설정
 # dev라는 브랜치에 push될 때 아래 workflow를 실행
